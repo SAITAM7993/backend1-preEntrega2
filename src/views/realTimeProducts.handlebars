@@ -1,0 +1,34 @@
+<h1>Trabajar con productos</h1>
+<div class='mt-5'>
+  <a class='btn btn-lg btn-secondary' href='http://localhost:8080/home'>Listado
+    de productos (home)</a>
+  <a class='btn btn-lg btn-secondary' href='http://localhost:8080'>Inicio</a>
+</div>
+<!-- Form para agregar -->
+<div class='m-5'>
+  <h2>Agregar</h2>
+  <form class='d-flex flex-column gap-2 m-3' id='addForm'>
+    <input id='title' type='text' name='title' placeholder='Nombre' />
+    <input id='price' type='number' name='price' placeholder='Precio' />
+    <input
+      id='description'
+      type='text'
+      name='description'
+      placeholder='Descripción'
+    />
+    <button class='btn btn-dark' type='submit'>Agregar producto</button>
+  </form>
+</div>
+<!-- Form para borrar-->
+
+<div class='m-5'>
+  <h2>Eliminar</h2>
+  <form class='d-flex flex-column gap-2 m-3' id='deleteForm'>
+    <input id='id' type='text' name='id' placeholder='ID de producto' />
+    <button class='btn btn-dark' type='submit'>Eliminar producto</button>
+  </form>
+</div>
+
+<!-- Productlist tiene TODOS los prods-->
+
+<div id='productsList'></div>

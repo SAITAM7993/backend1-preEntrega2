@@ -1,0 +1,29 @@
+<!-- Listamos los productos que recibimos -->
+<h1>Listado de productos</h1>
+<div class='mt-5'>
+ <a
+    class='btn btn-lg btn-secondary'
+    href='http://localhost:8080/realtimeproducts'
+  >Trabajar con productos (realtimeproducts)</a>
+  <a
+    class='btn btn-lg btn-secondary'
+    href='http://localhost:8080'
+  >Inicio</a>
+  </div>
+<div class="container mt-5">
+ <div class="row p-2">
+  {{#each products}}   
+  <div class="col-3 p-2">
+    <div class='card' style=''>
+      <div class='card-body bg-dark text-white'>
+        <h5 class='card-title text-uppercase'>{{this.title}}</h5>
+        <p class='card-text'>{{this.description}}</p>
+        <p class='card-text'>${{this.price}}</p>
+      </div>   
+      </div>
+    </div>
+  {{/each}}
+
+ 
+
+</div>
